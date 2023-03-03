@@ -1,0 +1,9 @@
+from flask import Blueprint
+
+directivos = Blueprint('directivos', __name__)
+
+@directivos.route('/getdir', methods=['GET'])
+def getDires():
+    return {'key':'value'}
+
+
